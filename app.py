@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-st.set_page_config(page_title="SaaS Investor Dashboard", layout="wide")
+st.set_page_config(page_title="SaaS Investor ssb Dashboard", layout="wide")
 
-st.title("📊 SaaS Investor Dashboard")
+st.title("📊 SaaS Investor Sensesbit Dashboard")
 
 uploaded_file = st.sidebar.file_uploader("Sube tu Excel", type=["xlsx", "xls", "csv"])
 
@@ -50,3 +50,4 @@ if uploaded_file:
     st.altair_chart(chart, use_container_width=True)
 else:
     st.info("Por favor, sube un archivo Excel con las hojas 'Data' y 'Prices'.")
+
